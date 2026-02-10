@@ -11,7 +11,7 @@ This repo is a small, educational playground for comparing search algorithms and
 
 ## Learning goals
 
-- See the difference between linear search ($O(n)$) and binary search ($O(log n)$).
+- See the difference between linear search ( _O(n)_ ) and binary search ( _O(log n)_ ).
 - Observe how input size affects runtime.
 - Connect iteration counts to algorithmic complexity.
 - Learn how to measure performance and visualize results.
@@ -34,7 +34,7 @@ node search.js
 python search.py
 ```
 
-3. Or open the notebook and run cells in order.
+1. Or open the notebook and run cells in order.
 
 ## Notes for trainees
 
