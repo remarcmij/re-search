@@ -1,3 +1,5 @@
+import json
+
 def generate_even_sorted_array(size):
     array = [0] * size
     for i in range(size):
@@ -50,7 +52,7 @@ def run_experiment(search_function, arrays_map, key, target):
     return {
         "func": search_function.__name__,
         "key": key,
-        "time": (end_time - start_time) * 1000,
+        "time_ms": (end_time - start_time) * 1000,
         "size": len(array),
         "index": index,
     }
@@ -67,7 +69,8 @@ def run_experiments(offset, is_missing=False):
                 target += 1
             results.append(run_experiment(func, arrays, key, target))
 
-    print(results)
+
+    print(json.dumps(results, indent=2))
 
 
 print("\nExperiments with target present near the end")

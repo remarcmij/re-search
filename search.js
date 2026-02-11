@@ -52,7 +52,7 @@ const runExperiment = (searchFunction, arrays, key, target) => {
   return {
     func: searchFunction.name,
     key,
-    time: endTime - startTime,
+    time_ms: endTime - startTime,
     size: array.length,
     index,
   };
