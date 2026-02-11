@@ -20,10 +20,11 @@ def plot_results(results, title=None, slant_x_ticks=False):
     ax.bar_label(
         bars,
         labels=[
-            f"index={index}\niterations={count}"
-            for index, count in zip(indices, iterations)
+            f"index={index}\niterations={count}\ntime={time:.3f} ms"
+            for index, count, time in zip(indices, iterations, times)
         ],
         padding=3,
+        fontsize=9,
     )
     ax.set_xlabel("time (ms)")
     ax.set_ylabel("size")
